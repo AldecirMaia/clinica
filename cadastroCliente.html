@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt -br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="/imagem/pressure_hypertension_medical_health_blood_measurement_heart_pulse_icon_133502.ico   "
+        type="image/x-icon" />
+    <link href="/css/styleCadastroCliente.css" rel="stylesheet" />
+    <title>Cadastro de Clientes</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabeca">
+            <h2>NOSSA EMPRESA</h2>
+        </div>
+    </header>
+    
+    <section>
+        <div ng-app="myApp" ng-controller="myCtrl" class="informes"><div class="telaEsquerda">
+            <h3>Consultorio</h3>
+            <div class="aba-clientes">
+                <details class="detalhes">
+                    <summary>Visão Geral</summary>
+                    <ul class="">
+
+                        <li><a href="#" class=""> Serviços</a>
+                        </li>
+                        <li><a href="#" class="">Outros</a></li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Clientes</summary>
+                    <ul class="">
+                        <li><a href="/cadastroCliente.html" class="">Cadastrar
+                                Cliente</a>
+                        </li>
+                        <li><a href="#" class="">Buscar
+                                Cliente</a>
+                        </li>
+                        <li><a href="#" class="">Alterar
+                                Cadastro</a></li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Agenda</summary>
+                    <ul class="">
+                        <li><a href="#" class="">Novo
+                                Informe</a>
+                        </li>
+                        <li><a href="#" class="">Não sei</a>
+                        </li>
+                        <li><a href="#" class="">Tambem Não
+                                sei</a></li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Financeiro</summary>
+                    <ul class="">
+                        <li><a href="#" class="">Visão Geral</a>
+                        </li>
+                        <li><a href="#" class="">Fluxo de
+                                Caixa</a>
+                        </li>
+                        <li><a href="#" class="">Contas a
+                                Pagar</a></li>
+                        <li><a href="#" class="">Contas a
+                                Receber</a></li>
+                        <li><a href="#" class="">Recibos</a></li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Logof</summary>
+                    <ul class="">
+                        <li><a href="/index.html" class="">Sair</a>
+                        </li>
+
+                    </ul>
+                </details>
+            </div>
+        </div>
+            <div class="mosaico-1">
+                <div class="slogan">
+                    <div class="logo">
+                        <img src="/imagem/images-removebg-preview.png" alt="">
+                    </div>
+                    <div class="dados">
+                        <h3>Dados do cliente</h3>
+                    </div>
+                    <div class="foto">
+                        <img src="" alt="{{imagem}}">
+
+                    </div>
+                </div>
+                <div class="cadastro">
+                    <div class="cadastro-1">
+                        <p style="margin-top:2% ;">Nome: </br><input type="text" ng-model="name"></p>
+                        <p>Idade: </br><input type="number" ng-model="idade"></p>
+                        <p>Telefone: </br><input type="tel" ng-model="telefone"></p>
+                        <p>Naturalidade: </br><input type="text" ng-model="naturalidade"></p>
+                        <p>Estado civil: </br><input type="text" ng-model="civil"></p>
+                        <p>Numero de filhos: </br><input type="number" ng-model="filhos"></p>
+                        <p>sexo: </br><input type="text" ng-model="sexo"></p>
+                        <p>CPF: </br><input type="text" ng-model="cpf"></p>
+
+                    </div>
+                    <div class="cadastro-2">
+                        <p>Nascimento: </br><input type="date" ng-model="nascimento"></p>
+                        <p>Profissão: </br><input ng-model="profissao">
+                        </p>
+                        <p>Necessidade especial: </br><input type="text" ng-model="especial"></p>
+                        <p>Endereço: </br><input type="text" ng-model="enderenco"></p>
+                        <p>Bairro: </br><input type="text" ng-model="bairro"></p>
+                        <p>Cidade: </br><input type="text" ng-model="cidade"></p>
+                        <p>E-mail: </br><input type="email" ng-model="email"></p>
+                        <p>Nome dos responsáveis, caso o cliente seja menor de idade: </br><input ng-model="responsvel">
+                        <p>Foto <input type="color" ng-model="imagem"></p>
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <div id="print_cadastro" class="mosaico-2">
+                <div class="slogan">
+                    <div class="logo">
+                        <img src="/imagem/images-removebg-preview.png" alt="">
+                    </div>
+                    <div class="dados">
+                        <h3>Dados do cliente</h3>
+                    </div>
+                    <div class="foto">
+                        <img src="" alt="{{imagem}}">
+                    </div>
+                </div>
+                <div class="dados-1">
+                    <div class="dados-nome">
+                        <p>Nome : </br>{{name}}</p>
+                    </div>
+                    <div class="dados-tele">
+                        <p>Nascimento : {{nascimento}}</p>
+                    </div>
+
+                </div>
+                <div class="dados-2">
+                    <div class="dados-natu">
+                        <p>Naturalidade: {{naturalidade}}</p>
+                    </div>
+                    <div class="dados-civil">
+                        <p>Estado civil : {{civil}}</p>
+                    </div>
+                    <div class="dados-filhos">
+
+                        <p>CPF: {{cpf}}</p>
+                    </div>
+                </div>
+                <div class="sessao-inf">
+                    <div class="sessao-inf1">
+                        <p class="idade">Idade : {{idade}}</p>
+                        <p>Telefone : {{telefone}}</p>
+                        <p>sexo : {{sexo}}</p>
+                    </div>
+                    <div class="sessao-inf2">
+                        <p>Profissão: {{profissao}}</p>
+                        <p>Numero de filhos : {{filhos}}</p>
+                        <p>Necessidade Especial: {{especial}}</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="sessao-inf3">
+                    <p>Endereço : </br>{{enderenco}}</p>
+                    <p>Bairro : </br>{{bairro}}</p>
+                    <p>Cidade : </br>{{cidade}}</p>
+
+                </div>
+                <p>E-mail: </br>{{email}}</p>
+                <p>Nome dos responsáveis, caso o cliente seja menor de idade: </br>{{responsvel}}</p>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+    </section>
+    <section>
+        <div class="envio">
+            <div class="envio-1"></div>
+            <div class="envio-2">
+                <form>
+                    <button class="envio-button" type="button" value="imprimir" onClick="window.print()"
+                        onclick="Evento()">Salvar</button>
+                    <button class="envio-button" type="button" value="imprimir" onclick="location.href='telaPrincipal.html'"
+                        onclick="Evento()">Voltar</button>
+                </form>
+            </div>
+            <div class="envio-3"></div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope) {
+            $scope.nome = "teste";
+            $scope.idade = "";
+            $scope.telefone = "";
+            $scope.Naturalidade = "";
+            $scope.civil = "";
+            $scope.filhos = "";
+            $scope.sexo = "";
+            $scope.nascimento = "";
+            $scope.cpf = "";
+            $scope.email = "";
+            $scope.especial = "";
+            $scope.bairro = "";
+            $scope.cidade = "";
+        });
+    </script>
+    <!--<script>
+        function Evento(print_cadastro) {
+            alert('evento funcionando')
+        }
+    </script>-->
+
+    <script>
+        var obj = {
+            method: "GET",
+            url: "impressao.html",
+
+        }
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope, $http, $sce) {
+            $http(obj).then(function mySuccess(response) {
+                $scope.resposta = $sce.trustAsHtml(response.data);
+            }, function myError(response) {
+                $scope.myWelcome = response.statusText;
+            });
+        });
+    </script>
+</body>
+
+</html>

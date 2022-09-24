@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #4CAF50;
+}
+
+.cabeca {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+
+}
+
+section .informes {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.clear {
+    clear: both;
+}
+.telaEsquerda{
+    width: 15%;
+    background: rgba(200, 200 , 200, 0.3);
+}
+.telaEsquerda h3{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+.aba-clientes{
+    margin-top: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+details{
+    font-size: 18px;
+    
+}
+.aba-clientes ul{
+    list-style: none;
+    
+}
+.aba-clientes li{
+    padding-left: 15%;
+}
+.aba-clientes a{
+    text-decoration: none;
+}
+.cadastro {
+    width: 100%;
+    display: flex; 
+}
+.cadastro-1{
+    width: 50%;
+}
+.cadastro-2{
+    width: 50%;
+}
+.slogan {
+    display: flex;
+    width: 100%;
+
+}
+
+.logo {
+    width: 50%;
+    margin-top: 10px;
+
+}
+.logo img{
+    width: 150px;
+    height: 80px;
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.dados {
+    width: 30%;
+    margin-top: 30px;
+    padding-right: 10%;
+}
+.foto{
+    width: 20%;
+}
+.foto img{
+    width: 60px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 40px;
+    
+    background-repeat: no-repeat;
+    background-position: 100%;
+
+}
+.dados h3 {
+    padding-top: 7px;
+}
+
+.mosaico-1 {
+    width: 40%;
+    padding-left: 2%;
+    border: 1px solid black;
+    font-size: large;
+}
+
+.mosaico-1 h2 {
+    text-align: center;
+}
+
+.mosaico-1 p {
+    padding-bottom: 4px;
+}
+
+.mosaico-2 {
+    width: 40%;
+    padding-left: 2%;
+    border: 1px solid black;
+    font-size: large;
+}
+
+.mosaico-2 h2 {
+    text-align: center;
+}
+
+.mosaico-2 p {
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+   
+    margin-top: 2%;
+}
+
+.dados-1 {
+    display: flex;
+    width: 100%;
+}
+
+.dados-nome {
+    width: 70%;
+}
+
+.dados-tele {
+    width: 30%;
+    padding-top: 5px;
+}
+.dados-2{
+    display: flex;
+    width: 100%; 
+    margin-top: 2%;
+}
+.dados-natu{
+    width: 40%;
+}
+.dados-civil{
+    width: 30%;
+}
+.dados-filhos{
+    width: 30%;
+}
+.sessao-inf {
+    width: 100%;
+    display: block;
+    margin-top: 4%;
+
+}
+
+.sessao-inf1 {
+    width: 50%;
+    display: block;
+    float: left;
+
+}
+
+.sessao-inf2 {
+    width: 48%;
+    display: block;
+    float: right;
+    margin-right: 1%;
+}
+
+.sessao-inf3 {
+    margin-top: 4%;
+
+}
+
+.envio {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.envio-1 {
+    width: 33.33%;
+}
+
+.envio-2 {
+    width: 33.33%;
+    text-align: center;
+}
+
+.envio-button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8%;
+}
+
+.envio-3 {
+    width: 33.33%;
+}
+
+@media screen and (max-width:768px) {
+    section.informes {
+        width: 100%;
+    }
+
+    .mosaico-1 {
+        display: block;
+        width: 100%;
+
+    }
+
+    .mosaico-2 {
+        display: block;
+        width: 100%;
+    }
+}

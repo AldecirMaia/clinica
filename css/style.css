@@ -1,0 +1,16 @@
+.conteiner{
+    width: 50%;
+    max-height: 700px;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+.tela-login{
+    width: 50%;
+    margin-left: 25%;
+}
+@media screen and (max-width: 1000px){
+    .tela-login{
+        width: 100%;
+        margin-left: 0%;
+    }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt -br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="/css/telaPrincipal.css" rel="stylesheet">
+    <title>Tela Principal</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabeca">
+            <h2>NOSSA EMPRESA</h2>
+        </div>
+    </header>
+    <section class="tela">
+        <div class="telaEsquerda">
+            <h3>Consultorio</h3>
+            <div class="aba-clientes">
+                <details class="detalhes">
+                    <summary>Visão Geral</summary>
+                    <ul class="">
+
+                        <li><a href="#" class=""> Serviços</a>
+                        </li>
+                        <li><a href="#" class="">Outros</a></li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Clientes</summary>
+                    <ul class="">
+                        <li><a href="/cadastroCliente.html" class="">Cadastrar
+                                Cliente</a>
+                        </li>
+                        <li><a href="#" class="">Buscar
+                                Cliente</a>
+                        </li>
+                        <li><a href="#" class="">Alterar
+                                Cadastro</a></li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Agenda</summary>
+                    <ul class="">
+                        <li><a href="#" class="">Novo
+                                Informe</a>
+                        </li>
+                        <li><a href="#" class="">Não sei</a>
+                        </li>
+                        <li><a href="#" class="">Tambem Não
+                                sei</a></li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Financeiro</summary>
+                    <ul class="">
+                        <li><a href="#" class="">Visão Geral</a>
+                        </li>
+                        <li><a href="#" class="">Fluxo de
+                                Caixa</a>
+                        </li>
+                        <li><a href="#" class="">Contas a
+                                Pagar</a></li>
+                        <li><a href="#" class="">Contas a
+                                Receber</a></li>
+                        <li><a href="#" class="">Recibos</a></li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Logof</summary>
+                    <ul class="">
+                        <li><a href="/index.html" class="">Sair</a>
+                        </li>
+
+                    </ul>
+                </details>
+            </div>
+        </div>
+        <div class="telaDireita">
+            <div class="canvas-grafico">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="canvas-grafico2">
+                <canvas id="myGrafico2"></canvas>
+            </div>
+
+        </div>
+        
+    </section>
+
+
+    <footer>
+        <p>Todos os direitos reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/grafico.js"></script>
+</body>
+
+</html>
